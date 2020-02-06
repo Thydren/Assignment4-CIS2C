@@ -28,12 +28,12 @@ const searchString = (letter, word) => {
 
   let numberCount = 0;
     for (let i = 0; i <= word.length -1; i++)
-        if(numberCount[i] == letter) {
+        if(word[i] == letter) {
             numberCount++;
         }
         return numberCount;
 };
-console.log(searchString("s", "mississippi"));
+console.log(searchString("m", "mississippi"));
 
 /* 
 Easy way out: 
